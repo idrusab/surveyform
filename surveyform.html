@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./surveyform_styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="number" id="number-label">Age (optional)<input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What's your current role?
+          <select id="dropdown">
+            <option value="">select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Freelancer</option>
+            <option value="4">Other</option>
+            <option value="4">Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="definitely-recommend"><input id="definitely-recommend" type="radio" name="recommendation" value="definitely" class="inline" checked />Definitely</label>
+        <label for="maybe-recommend"><input id="maybe-recommend" type="radio" name="recommendation" value="maybe" class="inline" />Maybe</label>
+        <label for="notsure-recommend"><input id="notsure-recommend" type="radio" name="recommendation" value="notsure" class="inline" />Not sure</label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved?</legend>
+        <label for="instruction-improved"><input id="instruction-improved" type="checkbox" value="instruction" checked class="inline" />Instructions</label>
+        <label for="challenge-improved"><input id="challenge-improved" type="checkbox" value="challenge" class="inline" />Challenges</label>
+        <label for="help-improved"><input id="help-improved" type="checkbox"  value="gethelp" class="inline" />Get Help</label>
+      </fieldset>
+      <label for="comments">Any comments or suggestions?
+        <textarea id="comments" rows="3" cols="30" value="comments"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
